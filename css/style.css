@@ -51,15 +51,16 @@ h3.quote {
 }
 h3.about-me-info {
   font-size: 48px;
+  padding-top: 10px;
 }
 
 div.about-me {
   background: #f6f6f6;
   margin-top: 48px;
 }
-p {
+p.text {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 34px;
   text-align: center;
 }
 div.card-body {
@@ -67,4 +68,8 @@ div.card-body {
 }
 a.btn {
   font-size: 14px;
+  background: #f6f6f6;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  margin-top: 5px;
 }
