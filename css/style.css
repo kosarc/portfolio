@@ -1,9 +1,70 @@
-body {
-  font-family: "DM Serif Display", serif !important;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
 }
+h1.name {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  line-height: 90px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+div.position {
+  position: static;
+}
+nav.bg-color {
+  background: #f6f6f6 !important;
+}
+
 .logo-name {
   font-size: 20px;
+  font-family: "DM Serif Display", serif;
+}
+.nav-font {
+  font-family: "DM Serif Display", serif;
 }
 .rotate {
   font-size: 30px;
+}
+
+.intoduction {
+  background: #f6f6f6;
+}
+a.contact-button {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+}
+h3.quote {
+  margin-top: 70px;
+  margin-bottom: 86px;
+  font-style: italic;
+  line-height: 50px;
+  font-size: 40px;
+  color: #64676a;
+}
+h3.about-me-info {
+  font-size: 48px;
+}
+
+div.about-me {
+  background: #f6f6f6;
+  margin-top: 48px;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+div.card-body {
+  padding: 0 12px !important;
+}
+a.btn {
+  font-size: 14px;
 }
