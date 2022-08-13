@@ -73,3 +73,8 @@ a.btn {
   border: 0;
   margin-top: 5px;
 }
+hr.line {
+  position: static;
+  color: #c8c9ca;
+  opacity: 1;
+}
