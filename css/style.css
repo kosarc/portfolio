@@ -21,6 +21,7 @@ div.position {
 }
 nav.bg-color {
   background: #f6f6f6 !important;
+  z-index: 1020;
 }
 
 .logo-name {
@@ -39,7 +40,11 @@ nav.bg-color {
 }
 a.contact-button {
   font-family: "DM Serif Display", serif;
-  font-size: 20px;
+  font-size: 14px;
+  background: #f6f6f6;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  margin-top: 5px;
 }
 h3.quote {
   margin-top: 70px;
@@ -56,25 +61,125 @@ h3.about-me-info {
 
 div.about-me {
   background: #f6f6f6;
-  margin-top: 48px;
+  margin-top: 64px;
+  margin-bottom: 66px;
 }
-p.text {
+div.p-text {
   font-size: 16px;
-  line-height: 34px;
-  text-align: center;
+  line-height: 28px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 24px !important;
+}
+div.p-text-bg-left {
+  background: #f6f6f6;
+  border-radius: 0 4px 4px 0;
+  padding: 20px;
+}
+div.p-text-bg-right {
+  background: #f6f6f6;
+  border-radius: 4px 0 0 4px;
+  padding: 20px;
 }
 div.card-body {
   padding: 0 12px !important;
-}
-a.btn {
-  font-size: 14px;
-  background: #f6f6f6;
-  border-radius: 0 4px 4px 0;
-  border: 0;
-  margin-top: 5px;
 }
 hr.line {
   position: static;
   color: #c8c9ca;
   opacity: 1;
+}
+i.position-size {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  color: #dddddd;
+  font-size: 130px;
+}
+img.icon {
+  max-width: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+small.style {
+  font-size: 11px;
+  font-family: monospace;
+}
+div.bg-project {
+  background: #f6f6f6;
+  border-radius: 0 4px 4px 0;
+  padding: 3px;
+}
+div.bg-project-weather {
+  background: #f6f6f6;
+  border-radius: 4px 0 0 4px;
+  padding: 3px;
+}
+div.btn {
+  font-family: "DM Serif Display", serif;
+  font-size: 14px;
+  background: #f6f6f6;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+div.btn-weather {
+  border-radius: 4px 0 0 4px !important;
+}
+div.btn:hover {
+  background: rgb(211, 212, 213);
+}
+div.position-project {
+  padding: 70px 40px;
+}
+label.input {
+  font-family: Rubik, sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: RGB(136, 136, 136);
+}
+span.required {
+  color: RGB(193, 89, 75);
+}
+input.input-field,
+textarea.input-field {
+  padding: 12px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 3%);
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
+  border-radius: 0 4px 4px 0;
+}
+
+input.input-field:focus,
+textarea.input-field:focus {
+  outline-color: rgb(211, 212, 213);
+}
+input.submit-button {
+  font-family: "DM Serif Display", serif;
+  font-size: 16px;
+  background: #f6f6f6;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  padding: 16px 30px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+input.submit-button:hover {
+  background: rgb(211, 212, 213);
+}
+span.connection {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
