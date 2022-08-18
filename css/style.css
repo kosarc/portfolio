@@ -1,13 +1,31 @@
+:root {
+  --main-font: "Playfair Display", serif;
+  --nav-btn-heading-font: "DM Serif Display", serif;
+  --text-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --background-color: #f6f6f6;
+  --hr-line-color: #c8c9ca;
+  --border-radius-rounded-end: 0 4px 4px 0;
+  --border-radius-rounded-start: 4px 0 0 4px;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.logo-name,
+.nav-font,
+a.contact-button,
+div.btn,
+input.submit-button {
   text-align: center;
-  font-family: "DM Serif Display", serif;
+  font-family: var(--nav-btn-heading-font);
 }
+
 h1.name {
-  font-family: "Playfair Display", serif;
+  font-family: var(--main-font);
   font-size: 60px;
   line-height: 90px;
 }
@@ -16,36 +34,48 @@ h2 {
   line-height: 30px;
   padding-top: 10px;
 }
-div.position {
-  position: static;
-}
+
 nav.bg-color {
-  background: #f6f6f6 !important;
+  background: var(--background-color) !important;
   z-index: 1020;
 }
 
-.logo-name {
+nav.logo-name {
   font-size: 20px;
-  font-family: "DM Serif Display", serif;
 }
-.nav-font {
-  font-family: "DM Serif Display", serif;
-}
-.rotate {
+
+nav .rotate {
   font-size: 30px;
 }
 
 .intoduction {
-  background: #f6f6f6;
+  background: var(--background-color);
 }
-a.contact-button {
-  font-family: "DM Serif Display", serif;
-  font-size: 14px;
-  background: #f6f6f6;
-  border-radius: 0 4px 4px 0;
+a.contact-button,
+div.btn,
+input.submit-button {
+  font-size: 15px;
+  background: var(--background-color);
+  border-radius: var(--border-radius-rounded-end);
   border: 0;
-  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
+
+div.btn-weather {
+  border-radius: var(--border-radius-rounded-start) !important;
+}
+div.btn:hover {
+  background: rgb(211, 212, 213);
+}
+input.submit-button {
+  padding: 16px 30px;
+}
+input.submit-button:hover {
+  background: rgb(211, 212, 213);
+}
+
 h3.quote {
   margin-top: 70px;
   margin-bottom: 86px;
@@ -60,42 +90,44 @@ h3.about-me-info {
 }
 
 div.about-me {
-  background: #f6f6f6;
+  background: var(--background-color);
   margin-top: 64px;
   margin-bottom: 66px;
 }
+p.app-description,
 div.p-text {
   font-size: 16px;
-  line-height: 28px;
+  line-height: 24px;
   text-align: justify;
   text-justify: inter-word;
+}
+div.p-text {
   padding: 24px !important;
 }
-div.p-text-bg-left {
-  background: #f6f6f6;
-  border-radius: 0 4px 4px 0;
+
+div.p-text-bg-left,
+div.p-text-bg-right {
+  background: var(--background-color);
+  border-radius: var(--border-radius-rounded-end);
   padding: 20px;
 }
 div.p-text-bg-right {
-  background: #f6f6f6;
-  border-radius: 4px 0 0 4px;
-  padding: 20px;
+  border-radius: var(--border-radius-rounded-start);
 }
 div.card-body {
   padding: 0 12px !important;
 }
 hr.line {
-  position: static;
-  color: #c8c9ca;
-  opacity: 1;
+  color: var(--hr-line-color);
 }
 i.position-size {
   display: flex;
   justify-content: center;
   height: 100%;
   align-items: center;
-  color: #dddddd;
+  color: var(--background-color);
   font-size: 130px;
+  opacity: 1;
 }
 img.icon {
   max-width: 80px;
@@ -108,31 +140,14 @@ small.style {
   font-size: 11px;
   font-family: monospace;
 }
-div.bg-project {
-  background: #f6f6f6;
-  border-radius: 0 4px 4px 0;
+div.bg-project,
+div.bg-project-weather {
+  background: var(--background-color);
+  border-radius: var(--border-radius-rounded-end);
   padding: 3px;
 }
 div.bg-project-weather {
-  background: #f6f6f6;
-  border-radius: 4px 0 0 4px;
-  padding: 3px;
-}
-div.btn {
-  font-family: "DM Serif Display", serif;
-  font-size: 14px;
-  background: #f6f6f6;
-  border-radius: 0 4px 4px 0;
-  border: 0;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-div.btn-weather {
-  border-radius: 4px 0 0 4px !important;
-}
-div.btn:hover {
-  background: rgb(211, 212, 213);
+  border-radius: var(--border-radius-rounded-start);
 }
 div.position-project {
   padding: 70px 40px;
@@ -154,26 +169,12 @@ textarea.input-field {
   box-shadow: 0 1px 4px rgb(0 0 0 / 3%);
   font-family: Rubik, sans-serif;
   font-weight: 300;
-  border-radius: 0 4px 4px 0;
+  border-radius: var(--border-radius-rounded-end);
 }
 
 input.input-field:focus,
 textarea.input-field:focus {
   outline-color: rgb(211, 212, 213);
-}
-input.submit-button {
-  font-family: "DM Serif Display", serif;
-  font-size: 16px;
-  background: #f6f6f6;
-  border-radius: 0 4px 4px 0;
-  border: 0;
-  padding: 16px 30px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 1px;
-}
-input.submit-button:hover {
-  background: rgb(211, 212, 213);
 }
 span.connection {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
