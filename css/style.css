@@ -61,6 +61,7 @@ input.submit-button {
   display: flex;
   justify-content: center;
   padding: 10px;
+  color: black;
 }
 
 div.btn-weather {
