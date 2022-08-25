@@ -16,14 +16,20 @@ function activeContactMe() {
   contactMeButton.classList.add("active");
 }
 
+function formSubmition(event) {
+  event.preventDefault();
+  document.querySelector("#contact-me-anchor").innerHTML =
+    "Thank you, your form is submitted";
+}
+
 let introductionButton = document.querySelector("#introduction");
 let projectsButton = document.querySelector("#projects");
 let contactMeButton = document.querySelector("#contact-me");
+let contactSection = document.querySelector("#submit-button");
+
+console.log(contactSection);
 
 introductionButton.addEventListener("click", activeIntroduction);
 projectsButton.addEventListener("click", activeProjects);
 contactMeButton.addEventListener("click", activeContactMe);
-
-console.log(introductionButton);
-console.log(projectsButton);
-console.log(contactMeButton);
+contactSection.addEventListener("submit", formSubmition);
