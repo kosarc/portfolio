@@ -187,7 +187,7 @@ span.connection {
 }
 div.contact-banner {
   position: sticky;
-  top: 40px;
+  top: 41px;
 }
 
 @media (max-width: 991px) {
