@@ -16,8 +16,7 @@ function activeContactMe() {
   contactMeButton.classList.add("active");
 }
 
-function formSubmition(event) {
-  event.preventDefault();
+function formSubmition() {
   document.querySelector("#contact-me-anchor").innerHTML =
     "Thank you, your form is submitted";
 }
