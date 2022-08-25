@@ -18,7 +18,7 @@ function activeContactMe() {
 
 function formSubmition() {
   document.querySelector("#contact-me-anchor").innerHTML =
-    "Thank you, your form is submitted";
+    "Thanks, your form is submitted!";
 }
 
 let introductionButton = document.querySelector("#introduction");
