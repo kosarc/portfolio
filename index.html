@@ -239,7 +239,8 @@ If you are working on something that you really care about, you don’t have to 
 </footer>
 </div>
  <script src="js/script.js">
-   function formSubmition() {
+   function formSubmition(event) {
+     event.preventDefault();
   document.querySelector("#contact-me-anchor").innerHTML =
     "Thank you, your form is submitted";
 }
