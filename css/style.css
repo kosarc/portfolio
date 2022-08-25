@@ -1,6 +1,5 @@
 :root {
   --main-font: "Playfair Display", serif;
-  --nav-btn-heading-font: "DM Serif Display", serif;
   --text-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -21,18 +20,26 @@ a.contact-button,
 div.btn,
 input.submit-button {
   text-align: center;
-  font-family: var(--nav-btn-heading-font);
+  font-family: var(--main-font);
 }
 
 h1.name {
   font-family: var(--main-font);
-  font-size: 60px;
+  font-size: 45px;
   line-height: 90px;
 }
-h2 {
-  font-size: 36px;
-  line-height: 30px;
+div h2.introduction-title {
+  font-size: 20px;
+  line-height: 25px;
   padding-top: 10px;
+}
+div h2.card-info {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+div.introduction-card {
+  padding: 0 12px;
 }
 
 nav.bg-color {
@@ -40,15 +47,25 @@ nav.bg-color {
   z-index: 1020;
 }
 
-nav.logo-name {
-  font-size: 20px;
+span.logo-name {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  position: relative;
+  bottom: 4px;
 }
-
+div.nav-font {
+  font-size: 15px;
+  text-transform: uppercase;
+}
 nav .rotate {
   font-size: 30px;
 }
+p.card-text {
+  font-size: 15px;
+}
 
-.introduction {
+div.introduction {
   background: var(--background-color);
 }
 a.contact-button,
@@ -82,11 +99,11 @@ h3.quote {
   margin-bottom: 86px;
   font-style: italic;
   line-height: 50px;
-  font-size: 40px;
-  color: #64676a;
+  font-size: 36px;
+  color: #6f6f6f;
 }
 h3.about-me-info {
-  font-size: 48px;
+  font-size: 33px;
   padding-top: 10px;
 }
 
@@ -97,7 +114,7 @@ div.about-me {
 }
 p.app-description,
 div.p-text {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   text-align: justify;
   text-justify: inter-word;
@@ -114,9 +131,6 @@ div.p-text-bg-right {
 }
 div.p-text-bg-right {
   border-radius: var(--border-radius-rounded-start);
-}
-div.card-body {
-  padding: 0 12px !important;
 }
 hr.line {
   color: var(--hr-line-color);
@@ -181,13 +195,13 @@ span.connection {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 div.contact-banner {
   position: sticky;
-  top: 41px;
+  top: 42px;
 }
 
 @media (max-width: 991px) {
@@ -199,7 +213,6 @@ div.contact-banner {
     margin: 0 auto;
     max-width: 500px;
   }
-
   div.name-card {
     padding: 0;
   }
@@ -352,7 +365,7 @@ div.contact-banner {
     margin-bottom: 66px;
   }
   h3.about-me-info {
-    font-size: 36px;
+    font-size: 34px;
   }
   div.laptop {
     max-width: 181px;
@@ -399,7 +412,7 @@ div.contact-banner {
     margin-bottom: 63px;
   }
   h3.about-me-info {
-    font-size: 32px;
+    font-size: 30px;
   }
   h5.card-title {
     font-size: 18px;
