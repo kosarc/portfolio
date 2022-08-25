@@ -16,8 +16,7 @@ function activeContactMe() {
   contactMeButton.classList.add("active");
 }
 
-function formSubmition(event) {
-  event.preventDefault();
+function formSubmition() {
   document.querySelector("#contact-me-anchor").innerHTML =
     "Thank you, your form is submitted";
 }
@@ -32,4 +31,3 @@ console.log(contactSection);
 introductionButton.addEventListener("click", activeIntroduction);
 projectsButton.addEventListener("click", activeProjects);
 contactMeButton.addEventListener("click", activeContactMe);
-contactSection.addEventListener("load", formSubmition);
