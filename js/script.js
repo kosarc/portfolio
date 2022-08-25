@@ -32,4 +32,4 @@ console.log(contactSection);
 introductionButton.addEventListener("click", activeIntroduction);
 projectsButton.addEventListener("click", activeProjects);
 contactMeButton.addEventListener("click", activeContactMe);
-contactSection.addEventListener("submit", formSubmition);
+contactSection.addEventListener("load", formSubmition);
