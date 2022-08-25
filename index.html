@@ -186,7 +186,7 @@ If you are working on something that you really care about, you don’t have to 
 
 <hr class="line">
 
- <div class="about-me rounded-end pb-1" >
+ <div class="about-me rounded-end pb-1 contact-banner" >
  <h3 class="about-me-info" id="contact-me-anchor">Contact me</h3>
  </div>
  <form action="https://formsubmit.co/petiakraj@gmail.com" method="POST" id="form-submission">
@@ -204,7 +204,7 @@ If you are working on something that you really care about, you don’t have to 
   <div><input class="input-field mb-3" type="text" name="subject" id="subject" required style="width: 100%;"></div></div>
 
   <div class="col-sm-12"><label for="visitor-message" class="input mb-2">MESSAGE <span class="required">*</span></label>
- <div> <textarea class="input-field mb-3" name="message" id="visitor-message" cols="30" rows="10" required style="width: 100%;"></textarea> </div></div></div>
+ <div> <textarea class="input-field mb-3" name="message" id="visitor-message" cols="30" rows="5" required style="width: 100%;"></textarea> </div></div></div>
 
  <input type="submit" id="submit-button" value="Submit" class="submit-button mb-5" >
  <input type="hidden" name="_next" value="https://startling-raindrop-543366.netlify.app/index.html#contact-me-anchor">
@@ -215,7 +215,7 @@ If you are working on something that you really care about, you don’t have to 
 </form>
 <hr class="line">
    
-<footer class="text-center text-lg-start text-muted rounded-end mt-3 mb-3" style="background-color:#f6f6f6;">
+<footer class="text-center text-lg-start text-muted rounded-end mt-3 mb-2" style="background-color:#f6f6f6;">
   <section class="d-flex justify-content-center justify-content-lg-between p-4">
    
     <div class="me-5 d-none d-lg-block">
@@ -239,10 +239,6 @@ If you are working on something that you really care about, you don’t have to 
 </footer>
 </div>
  <script src="js/script.js">
-   function formSubmition() {
-  document.querySelector("#contact-me-anchor").innerHTML =
-    "Thank you, your form is submitted";
-}
  </script>
   </body>
 </html>
